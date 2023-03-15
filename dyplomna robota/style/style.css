@@ -372,6 +372,7 @@
 
 .more_img {
     position: absolute;
+    max-width: 100%;
 }
 
 .more_info {
