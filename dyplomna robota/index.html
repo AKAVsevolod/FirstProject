@@ -56,7 +56,7 @@
                     <button class="button header_button">
                         Buy template
                     </button>
-                    <button class="button header_button flex">
+                    <button class="button header_button flex open_modal">
                         <img class="button_icon1" src="./img/header/button_icon.svg" alt="button icon">
                         Cart
                         <img class="button_icon2" src="./img/header/button_icon2.svg" alt="button icon">
@@ -74,7 +74,7 @@
                 <h1 class="info_title">
                     Gear for when it actually matters.
                 </h1>
-                <p class="info_text">
+                <p class="info_text main_text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
                 </p>
         </div>
@@ -103,7 +103,9 @@
                             <p class="about_item_text">
                                 Read more
                             </p>
-                            <img class="about_pointer" src="./img/about/Arrow-Icon-Primary.svg" alt="about item icon">
+                            <div class="about_icon">
+                                <img src="./img/about/Arrow-Icon-Primary.svg" alt="about item icon">
+                            </div>
                         </div>
                     </div>
                     <div class="about_text">
@@ -367,31 +369,31 @@
         <img src="./img/navigation/IMAGE.png" alt="navigation_img" class="navigation_img">
             <div class="navigation_zone">
                 <div class="navigation_info flex flex_navigation">
-                    <div class="navigaion_item flex">
+                    <div class="navigation_item flex">
                         <img src="./img/navigation/IMage1.svg" alt="navigation_icon" class="navigation_icon">
                         <p class="navigation_text">
                             First Aid Kit
                         </p>
                     </div>
-                    <div class="navigaion_item flex">
+                    <div class="navigation_item flex">
                         <img src="./img/navigation/icons8-plastic-bottle-13.svg" alt="navigation_icon" class="navigation_icon">
                         <p class="navigation_text">
                             Banger Bottle
                         </p>
                     </div>
-                    <div class="navigaion_item flex">
+                    <div class="navigation_item flex">
                         <img src="./img/navigation/IMAGE3.svg" alt="navigation_icon" class="navigation_icon">
                         <p class="navigation_text">
                             Brian Schultz
                         </p>
                     </div>
-                    <div class="navigaion_item flex">
+                    <div class="navigation_item flex">
                         <img src="./img/navigation/IMAGE4.svg" alt="navigation_icon" class="navigation_icon">
                         <p class="navigation_text">
                             Learn Stoff
                         </p>
                     </div>
-                    <div class="navigaion_item flex">
+                    <div class="navigation_item flex">
                         <img src="./img/navigation/IMAGE5.svg" alt="navigation_icon" class="navigation_icon">
                         <p class="navigation_text">
                             Catalina, California
@@ -518,7 +520,7 @@
                         <p class="about_item_text">
                             Read more
                         </p>
-                        <img class="about_pointer" src="./img/about/Arrow-Icon-Primary.svg" alt="about item icon">
+                        <img class="about_icon" src="./img/about/Arrow-Icon-Primary.svg" alt="">
                     </div>
                 </div>
                 <div class="about_text">
@@ -623,21 +625,48 @@
                 </div>
             </div>
         </div>
-        <footer class="container flex">
-            <div class="footer_text">
-                © Outdoor Exploration, LLC. All rights reserved. Powered by Webflow
-            </div>
-            <div class="footer_sociales">
-                <div>
-                    <img src="./img/footer/IMAGE.svg" alt="footer_icon" class="footer_icon">
-                    <img src="./img/footer/IMAGE2.svg" alt="footer_icon" class="footer_icon">
-                    <img src="./img/footer/IMAGE3.svg" alt="footer_icon" class="footer_icon">
-                    <img src="./img/footer/IMAGE4.svg" alt="footer_icon" class="footer_icon">
+        <footer class="container">
+            <div class="flex footer_flex">
+                <div class="footer_text">
+                    © Outdoor Exploration, LLC. All rights reserved. Powered by Webflow
+                </div>
+                <div class="footer_sociales">
+                    <div>
+                        <img src="./img/footer/IMAGE.svg" alt="footer_icon" class="footer_icon">
+                        <img src="./img/footer/IMAGE2.svg" alt="footer_icon" class="footer_icon">
+                        <img src="./img/footer/IMAGE3.svg" alt="footer_icon" class="footer_icon">
+                        <img src="./img/footer/IMAGE4.svg" alt="footer_icon" class="footer_icon">
+                    </div>
                 </div>
             </div>
         </footer>
     </section>
+    <div class="modal_overlay">
+        <div class="modal">
+            <p class="modal_text">
+                Your cart is empty :(
+            </p>
+            <p class="close">
+                x
+            </p>
+            <div class="buttons">
+                <button class="button modal_button">
+                    Leave
+                </button>
+                <button class="button modal_button">
+                    Continue buying
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="up">
+        <span>
+            <img src="./img/about/Arrow-Icon-Primary.svg" alt="">
+        </span>
+    </div>   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./script/script.js"></script>
+    <script src="./modal/modal.js"></script>
+    <script src="./script/upButton.js"></script>
 </body>
 </html>
